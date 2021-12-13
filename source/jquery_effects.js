@@ -29,10 +29,28 @@ $(document).ready(function(){
 
     $("#btn_8").click(function(){
         var item = $(".redSquare");
-        item.animate({top: '170px'}, "slow");
-        item.animate({right: '0'}, "slow");
-        
+        item.animate({top: '170px'}, "slow")
+        item.animate({width: '270px', color: "#EFB14A"}, "slow");
+        item.animate({width: '100px', left:'170px',fontSize: "20px"}, "slow");
+        item.animate({top:'0px', height: '270px'}, "slow");
+        item.animate({height: '100px', backgroundColor: "blue"}, "slow");
+        item.animate({width: '270px',left: '0px'}, "slow");
+        item.animate({width: '100px', color:"black",backgroundColor:"#E50914",fontSize:"16px"}, "slow");
     })
 
+    $("#btn_9").click(function(){
+        $('.redSquare').stop(false);
+    })
 
+    $("#btn_10").click(function(){
+        $('.redSquare').hide("slow",function(){
+            alert('ukryto kwadrat')
+        });
+    })
+
+    $("#btn_11").click(function(){
+        $('.redSquare').css("color","pink")
+        .slideUp(300)
+        .slideDown(300);
+    })
 })

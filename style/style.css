@@ -42,8 +42,10 @@ p {
 }
 
 .container {
+    margin: 0 auto;
     position: relative;
     height: 300px;
+    width: 300px;
     border: 1px solid grey;
 }
 
@@ -55,5 +57,7 @@ p {
     bottom: auto;
     height: 100px;
     width: 100px;
-    background-color: red;
+    color: black;
+    font-weight: bold;
+    background-color: #E50914;
 }
